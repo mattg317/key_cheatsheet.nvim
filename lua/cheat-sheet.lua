@@ -1,4 +1,9 @@
-local commands = require("cheatsheet.renderer")
-commands.open()
+local commands = require "cheatsheet.commands"
 
--- commands.close()
+local M = {}
+
+function M.setup()
+    commands.setup()
+end
+
+return M
