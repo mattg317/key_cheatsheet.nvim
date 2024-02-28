@@ -22,9 +22,7 @@ local CMDS = {
             bar = true,
         },
         command = function()
-            -- read input
-            local note_to_add = table_control.read_input()
-            table_control.write_table(note_to_add)
+            table_control.command_add()
         end,
     },
     {
@@ -34,8 +32,7 @@ local CMDS = {
             bar = true,
         },
         command = function()
-            local to_delete = tonumber(vim.fn.input("Note to delete > ")) -- moves to vim commands
-            table_control.delete_from_table(to_delete)
+            table_control.command_delete()
         end
     },
 

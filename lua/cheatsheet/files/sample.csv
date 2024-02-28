@@ -1,5 +1,8 @@
 %s/foo/bar/g,Find and replace all
 >ap,shift entire paragraph
-H,Move to top of page
-M,Move to middle page
-L,Move to bot page
+<C-V>,Open in vertical split
+noh,remove search highlight
+]m,move to method
+<leader>do,diagnostics
+<leader>z,resize width
+gq,Format code
