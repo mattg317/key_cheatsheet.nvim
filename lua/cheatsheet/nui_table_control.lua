@@ -1,6 +1,7 @@
 local Input = require("nui.input")
 local Menu = require("nui.menu")
 local event = require("nui.utils.autocmd").event
+-- figure out better path management
 local contents =
 -- "/Users/mgiordanella/Main/30-39_Coding/30_Nvim/nvim_custom_plugins/key_cheatsheet.nvim/lua/cheatsheet/files/sample.csv"
 "/Users/mgiordanella/Main/30-39_Coding/30_Nvim/nvim_custom_plugins/key_cheatsheet.nvim/lua/cheatsheet/files/test.csv"
