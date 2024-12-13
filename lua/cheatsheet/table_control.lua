@@ -1,5 +1,5 @@
 local contents =
-"/Users/mgiordanella/Main/30-39_Coding/30_Nvim/nvim_custom_plugins/key_cheatsheet.nvim/lua/cheatsheet/files/sample.csv"
+"/Users/mgiordanella/Main/10_Coding/10_Nvim/key_cheatsheet.nvim/lua/cheatsheet/files/sample.csv"
 
 local M = {}
 

@@ -1,5 +1,6 @@
 local popup = require("plenary.popup")
 local contents_file = require("cheatsheet.table_control")
+-- local nui_contents_file = require("cheatsheet.nui_table_control")
 
 
 local M = {}
@@ -46,7 +47,8 @@ function M.toggle_menu()
     end
 
     local win_info = create_window()
-    local contents = contents_file.display_table()
+    -- local contents = contents_file.display_table()
+    local contents = nui_contents_file.display_table()
 
 
     CS_cmd_win_id = win_info.win_id

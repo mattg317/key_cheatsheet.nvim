@@ -1,5 +1,6 @@
 local toggle = require("cheatsheet.menu")
 local table_control = require("cheatsheet.table_control")
+local test_control = require("nui_cheatsheet.nui_table_control")
 
 local M = {}
 
@@ -22,8 +23,8 @@ local CMDS = {
             bar = true,
         },
         command = function()
-            table_control.command_add()
-            -- test_control.read_command_input()
+            -- table_control.command_add()
+            test_control.read_command_input()
         end,
     },
     {

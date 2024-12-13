@@ -1,9 +1,8 @@
 local Input = require("nui.input")
 local Menu = require("nui.menu")
 local event = require("nui.utils.autocmd").event
-local contents =
--- "/Users/mgiordanella/Main/30-39_Coding/30_Nvim/nvim_custom_plugins/key_cheatsheet.nvim/lua/cheatsheet/files/sample.csv"
-"/Users/mgiordanella/Main/30-39_Coding/30_Nvim/nvim_custom_plugins/key_cheatsheet.nvim/lua/cheatsheet/files/test.csv"
+-- local contents = "/Users/mgiordanella/Main/10_Coding/10_Nvim/key_cheatsheet.nvim/lua/cheatsheet/files/sample.csv"
+local contents = "/Users/mgiordanella/Main/10_Coding/10_Nvim/key_cheatsheet.nvim/lua/cheatsheet/files/sample.csv"
 
 local M = {}
 
@@ -57,6 +56,8 @@ function M.display_table()
     return display_table
 end
 
+-- TODO: Nui Version of display_table
+
 function M.read_input()
     local note_command = vim.fn.input("Enter VIM Command > ")
     local note = vim.fn.input("Enter Description > ")
@@ -103,8 +104,9 @@ function M.read_command_input()
                 print("Not a command")
             else
                 -- Finally add to table
-                M.write_table(note_to_add)
+                -- M.write_table(note_to_add)
                 print("Command added to cheat sheet: " .. value)
+                return note_to_add
             end
         end,
     })
@@ -115,6 +117,10 @@ function M.read_command_input()
         input:unmount()
     end)
 end
+
+
+-- bascially will want to run the read command twice and return the value?
+local first = M.read_command_input()
 
 function M.write_table(note_to_add)
     local main_table = M.read_table()

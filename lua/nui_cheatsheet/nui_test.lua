@@ -1,13 +1,11 @@
 local Popup = require("nui.popup")
 local Input = require("nui.input")
 local event = require("nui.utils.autocmd").event
-
 local contents_file = require("cheatsheet.table_control")
 local M = {}
 
 -- start table functions
-local contents =
-"/Users/mgiordanella/Main/30-39_Coding/30_Nvim/nvim_custom_plugins/key_cheatsheet.nvim/lua/cheatsheet/files/test.csv"
+local contents = "/Users/mgiordanella/Main/10_Coding/10_Nvim/key_cheatsheet.nvim/lua/cheatsheet/files/test.csv"
 
 local function read_table()
     local table_c = {}

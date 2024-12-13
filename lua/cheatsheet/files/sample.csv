@@ -6,3 +6,4 @@ noh,remove search highlight
 <leader>do,diagnostics
 <leader>z,resize width
 gq,Format code
+numberp,paste a number of times
