@@ -22,7 +22,7 @@ local CMDS = {
             bar = true,
         },
         command = function()
-            input_control.read_command_input('add')
+            input_control.add_command()
         end,
     },
     {
@@ -32,7 +32,7 @@ local CMDS = {
             bar = true,
         },
         command = function()
-            input_control.read_command_input('delete')
+            input_control.delete_command()
         end
     },
 

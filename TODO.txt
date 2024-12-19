@@ -1,0 +1,5 @@
+Items to do for cheat sheet
+- get copied over to the new repo for better importing
+- Work on getting options for setup
+- clean up code
+- betting coding practices all around with naming and parameters
